@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic);
 * {
     box-sizing: border-box; /* Padding and border should be included in all element's height and width for easier sizing */
-	background-image: url("Space.png");
+	background-image: url("Space.PNG");
 	font-family: Lora;
 }
 @media only screen and (max-height: 200px) {
