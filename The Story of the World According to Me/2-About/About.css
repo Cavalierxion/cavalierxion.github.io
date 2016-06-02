@@ -1,0 +1,269 @@
+/* Import Google Font "Lora" */
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+* {
+    box-sizing: border-box; /* Padding and border should be included in all element's height and width for easier sizing */
+	font-family: Lora;
+}
+@media only screen and (max-height: 200px) {
+/* Error Page when the browser window is too small to display properly */
+	#ErrorPage {display: block; color: #212121; text-align: center; border: 3px solid #212121; border-radius: 10px;}
+	#TitleSection {display: none;}
+	#MainSection {display: none; height: 100%;}
+	#ControlSection {display: none;}
+	#PageBackward  {display: none;}
+	#PageInfo {display: none;}
+	#PageInfoNone {display: none;}
+ 	#PageForward {display: none;}
+	#PageChapter {display: none;}
+	#LinkedInButton {display: none;}
+	#TwitterButton {display: none;}
+	#MailButton {display: none;}
+	#ChrisSandra {display: none;}
+	#Scout {display: none;}
+	.PortfolioSection {display: none;}
+	.WhatImReadingSection {display: none;}
+}
+@media only screen and (min-height: 200px) and (max-width: 800px) {
+/* For mobile phones, tablets, and small browser windows */
+	[class*="col-"] {width: 100%;}
+	#MainSection {border: 5px outset #878787;}
+	#PageBackward  {bottom: 2vw; left: 3vw; height: 10vw; width: 15vw; font-size: 7vw;}
+	#PageInfo {bottom: 2vw; right:20vw; height: 10vw; width: 26vw; font-size: 3vw;}
+	#PageInfoNone {bottom: 2vw; right:20vw; height: 10vw; width: 26vw; font-size: 2vw;}
+ 	#PageForward {bottom: 2vw; right: 3vw; height: 10vw; width: 15vw; font-size: 7vw;}
+	#PageChapter { bottom: 2vw; left: 20vw; height: 10vw; width: 27vw; font-size: 3vw;}
+	#InfoHoverMenu {top: -43vw;}
+	#ErrorPage {display: none; }
+	#LinkedInButton {display: inline-block; position: fixed; top: 3vw; right: 22vw; height: 10vw; width: 10vw; border: 3px solid #fdfdfd; border-radius: 10px;}
+	#TwitterButton {display: inline-block; position: fixed; top: 3vw; right: 12vw; height: 10vw; width: 10vw; border: 3px solid #fdfdfd; border-radius: 10px; }
+	#MailButton {display: inline-block; position: fixed; top: 3vw; right: 2vw; height: 10vw; width: 10vw; border: 3px solid #fdfdfd; border-radius: 10px;}
+	#Scout {width: 100%; border: 5px outset #ffffff;  max-width: 45%; min-width: 150px; float: right;}
+	#ChrisSandra {width: 100%; border: 5px outset #ffffff;  max-width: 45%; min-width: 150px;}
+	.PortfolioSection {width: 100%; height: 100px;}
+	.WhatImReadingSection {width: 100%; height: 50%;}
+}
+@media only screen and (min-height: 200px) and (min-width: 800px) {
+/* For large desktop browser with landscape orientation */
+	.col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+	#MainSection {border: 5px outset #878787; }
+	#PageBackward  {bottom: 2%; right: 10%; height: 10%; width: 6%; font-size: 8vmin; }
+	#PageInfo { bottom: 14%; right:2%; height: 10%; width: 14%; font-size: 3vmin;}
+	#PageInfoNone { bottom: 14%; right:2%; height: 10%; width: 14%; font-size: 3vmin;}
+ 	#PageForward {bottom: 2%; right: 2%; height: 10%; width: 6%; font-size: 8vmin;}
+	#PageChapter {bottom: 26%; right: 2%; height: 10%; width: 14%; font-size: 3vmin;}
+	#InfoHoverMenu {left: -100%; top: -430%;}
+	#ErrorPage {display: none;}
+	#LinkedInButton {display: block; position: fixed; top: 2%; right: 2%; height: 10%; border: 3px solid #fdfdfd; border-radius: 10px}
+	#TwitterButton {display: block; position: fixed; top: 14%; right: 2%; height: 10%; border: 3px solid #fdfdfd; border-radius: 10px}
+	#MailButton {display: block; position: fixed; top: 26%; right: 2%; height: 10%; border: 3px solid #fdfdfd; border-radius: 10px}
+	#Scout { width: 45%; border: 5px outset #ffffff; margin: 2%;}
+	#ChrisSandra { width: 45%; border: 5px outset #ffffff; margin: 2%;}
+	.PortfolioSection {width: 33%; height: 100px;}
+	.WhatImReadingSection {width: 33%; height: 20%;}
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+	#PageBackward {
+	color: #212121;
+	border: 3px solid #212121;
+	border-radius: 10px;
+	text-align: center;
+	float: left;
+	position: fixed;
+	background-color: #fdfdfd;
+} 
+	#PageBackward:hover {
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	transition-property: background-color;
+	transition-duration: .2s;
+	} 
+	#PageInfoNone {
+	color: #212121;
+	border: 3px solid #212121;
+	border-radius: 10px;
+	text-align: center;
+	position: fixed;
+	background-color: #fdfdfd;
+	} 
+	#PageInfo {
+	color: #212121;
+	border: 3px solid #212121;
+	border-radius: 10px;
+	text-align: center;
+	position: fixed;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #fdfdfd;
+} 
+	#PageInfo:hover p{
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	transition-property: background-color;
+	transition-duration: 1s;
+	} 
+	#PageInfo:hover #InfoHoverMenu {
+	display: block;
+	}
+	#PageInfo:hover {
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	transition-property: background-color;
+	transition-duration: .2s;
+	} 
+	#InfoHoverMenu {
+	display: none;
+	position: absolute;
+	border-radius: 10px;
+	border: 3px solid #212121;
+	background-image: none;
+	background-color: #fdfdfd;
+	width: 100%;
+	height: 535%;
+	text-align: left;
+	overflow: auto;
+	} 
+	#InfoHoverMenu a:hover {
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	display: block;
+	} 	
+	#PageForward {
+	color: #212121;
+	border: 3px solid #212121;
+	border-radius: 10px;
+	text-align: center;
+	float: right;
+	position: fixed;
+	z-index: 2;
+	background-color: #fdfdfd;
+} 
+	#PageForward:hover {
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	transition-property: background-color;
+	transition-duration: .2s;
+	}
+	#PageChapter {
+	color: #212121;
+	border: 3px solid #212121;
+	border-radius: 10px;
+	text-align: center;
+	position: fixed;
+	cursor: pointer;
+	display: inline-block;
+	z-index: 2;
+	background-color: #fdfdfd;
+}  
+	#PageChapter:hover p{
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	transition-property: background-color;
+	transition-duration: 1s;
+	} 
+	#PageChapter:hover #ChapterHoverMenu {
+	display: block;
+	}
+	#PageChapter:hover {
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	transition-property: background-color;
+	transition-duration: .2s;
+	} 
+	#ChapterHoverMenu {
+	display: none;
+	position: absolute;
+	top: -300%;	
+	border-radius: 10px;
+	border: 3px solid #212121;
+	background-image: none;
+	background-color: #fdfdfd;
+	width: 100%;
+	height: 300%;
+	overflow: auto;
+	} 
+	#ChapterHoverMenu a:hover {
+	background-image: none;
+	background-color: #212121;
+	color: #fdfdfd;
+	display: block;
+	} 
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	} 
+	a:link {
+		text-decoration: none;
+		color: #212121;
+	} 
+	#TitleSection {
+	text-align: center;
+	}
+	#ChrisSandraScout {
+		width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* Portfolio Section */ 
+	h3 {
+		color: #00aced;
+	}
+	.PortfolioSection {
+		border: 5px outset #ffffff;
+		display: inline-block;
+		background-color: #878787;
+	}
+	#Resume {
+		height: 100px;
+		width: 100%;
+		border: 5px outset #ffffff;
+		display: inline-block;
+		background-color: #00aced;
+	}
+	.WhatImReadingSection {
+		border: 5px outset #ffffff;
+		display: inline-block;
+		background-color: #878787;
+	}
+	.SectionDescription {
+		text-align: left;
+		color: #fdfdfd;
+		text-decoration: none;
+	}
+	.SectionImage {
+		height: 100%;
+		width: 100%;
+	}
+	.PageCount {
+		text-align: center;
+	}
+		
+	#World {
+	display: block;
+	margin: auto;
+	height: 35%;
+	width: 35%;
+	}
+	
