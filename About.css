@@ -71,6 +71,7 @@
 	#ChrisSandra { width: 45%; border: 5px outset #ffffff; margin: 2%;}
 	.PortfolioSection {width: 33%; height: 100px;}
 	.WhatImReadingSection {width: 33%; height: 20%;}
+
 }
 [class*="col-"] {
     float: left;
@@ -189,6 +190,11 @@
 	color: #fdfdfd;
 	transition-property: background-color;
 	transition-duration: .2s;
+	}
+	#demo {display: none;
+	}
+	#demo:checked + #PageChapter #ChapterHoverMenu{
+	display: block;
 	} 
 	#ChapterHoverMenu {
 	display: none;
