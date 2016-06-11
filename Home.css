@@ -139,7 +139,8 @@
 	transition-property: background-color;
 	transition-duration: .2s;
 	} 
-	#demo {display: none;
+	#demo {
+		display: none;
 	}
 	#demo:checked + #PageChapter #ChapterHoverMenu{
 	display: block;
