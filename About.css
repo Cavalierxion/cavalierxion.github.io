@@ -4,7 +4,7 @@
     box-sizing: border-box; /* Padding and border should be included in all element's height and width for easier sizing */
 	font-family: Lora;
 }
-@media only screen and (max-height: 200px) {
+@media only screen and (max-height: 250px) {
 /* Error Page when the browser window is too small to display properly */
 	#ErrorPage {display: block; color: #212121; text-align: center; border: 3px solid #212121; border-radius: 10px;}
 	#TitleSection {display: none;}
@@ -15,6 +15,7 @@
 	#PageInfoNone {display: none;}
  	#PageForward {display: none;}
 	#PageChapter {display: none;}
+	#InfoHoverMenu {display: none;}
 	#LinkedInButton {display: none;}
 	#TwitterButton {display: none;}
 	#MailButton {display: none;}
@@ -23,7 +24,7 @@
 	.PortfolioSection {display: none;}
 	.WhatImReadingSection {display: none;}
 }
-@media only screen and (min-height: 200px) and (max-width: 800px) {
+@media only screen and (min-height: 250px) and (max-width: 800px) {
 /* For mobile phones, tablets, and small browser windows */
 	[class*="col-"] {width: 100%;}
 	#MainSection {border: 5px outset #878787;}
@@ -32,7 +33,7 @@
 	#PageInfoNone {bottom: 2vw; right:20vw; height: 10vw; width: 26vw; font-size: 2vw;}
  	#PageForward {bottom: 2vw; right: 3vw; height: 10vw; width: 15vw; font-size: 7vw;}
 	#PageChapter { bottom: 2vw; left: 20vw; height: 10vw; width: 27vw; font-size: 3vw;}
-	#InfoHoverMenu {top: -43vw;}
+	#InfoHoverMenu {top: -300%; height: 300%;}
 	#ErrorPage {display: none; }
 	#LinkedInButton {display: inline-block; position: fixed; top: 3vw; right: 22vw; height: 10vw; width: 10vw; border: 3px solid #fdfdfd; border-radius: 10px;}
 	#TwitterButton {display: inline-block; position: fixed; top: 3vw; right: 12vw; height: 10vw; width: 10vw; border: 3px solid #fdfdfd; border-radius: 10px; }
@@ -62,7 +63,7 @@
 	#PageInfoNone { bottom: 14%; right:2%; height: 10%; width: 14%; font-size: 3vmin;}
  	#PageForward {bottom: 2%; right: 2%; height: 10%; width: 6%; font-size: 8vmin;}
 	#PageChapter {bottom: 26%; right: 2%; height: 10%; width: 14%; font-size: 3vmin;}
-	#InfoHoverMenu {left: -100%; top: -430%;}
+	#InfoHoverMenu {left: -100%; top: -430%; height: 535%;}
 	#ErrorPage {display: none;}
 	#LinkedInButton {display: block; position: fixed; top: 2%; right: 2%; height: 10%; border: 3px solid #fdfdfd; border-radius: 10px}
 	#TwitterButton {display: block; position: fixed; top: 14%; right: 2%; height: 10%; border: 3px solid #fdfdfd; border-radius: 10px}
@@ -141,7 +142,7 @@
 	background-image: none;
 	background-color: #fdfdfd;
 	width: 100%;
-	height: 535%;
+	
 	text-align: left;
 	overflow: auto;
 	} 
