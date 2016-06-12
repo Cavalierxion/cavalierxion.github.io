@@ -70,8 +70,8 @@
 	#MailButton {display: block; position: fixed; top: 26%; right: 2%; height: 10%; border: 3px solid #fdfdfd; border-radius: 10px}
 	#Scout { width: 45%; border: 5px outset #ffffff; margin: 2%;}
 	#ChrisSandra { width: 45%; border: 5px outset #ffffff; margin: 2%;}
-	.PortfolioSection {width: 33%; height: 100px;}
-	.WhatImReadingSection {width: 33%; height: 20%;}
+	.PortfolioSection {width: 32.5%; height: 100px;}
+	.WhatImReadingSection {width: 32.5%; height: 20%;}
 
 }
 [class*="col-"] {
