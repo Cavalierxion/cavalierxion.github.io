@@ -75,11 +75,11 @@
     }
 
     if (viewName === "timeline") {
-      dom.timelineView.style.display = "";
+      dom.timelineView.style.display = "block";
       dom.documentView.style.display = "none";
     } else {
       dom.timelineView.style.display = "none";
-      dom.documentView.style.display = "";
+      dom.documentView.style.display = "block";
       renderDocumentList();
     }
   }
