@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<LINK href="LincolnDecisionExplorer.css" rel="stylesheet" type="text/css">
+	<TITLE> The Story of the World According to Me - Lincoln Decision Explorer</TITLE>
+
+	<script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	 ga('create', 'UA-79980288-1', 'auto');
+	 ga('send', 'pageview');
+
+	</script>
+</HEAD>
+<BODY>
+		<div id="ErrorPage">
+			<h3> There's not enough room for the Story of the World! Please expand your window! </h3>
+		</div>
+		<div class="col-12" id="TitleSection">
+			<h1> Lincoln Decision Explorer </h1>
+			<p id="ExplorerSubtitle">April 1861: The Call for Troops</p>
+		</div>
+		<div class="col-10" id="MainSection">
+
+			<div id="ViewToggle">
+				<button class="view-btn active" data-view="timeline">Timeline</button>
+				<button class="view-btn" data-view="documents">Documents</button>
+			</div>
+
+			<div id="ExplorerContent">
+				<!-- Timeline-Decision View -->
+				<div id="TimelineView"></div>
+
+				<!-- Document Explorer View -->
+				<div id="DocumentView">
+					<div id="DocumentFilters">
+						<input type="text" id="DocumentSearch" placeholder="Search documents...">
+						<select id="DocumentTypeFilter">
+							<option value="all">All Types</option>
+							<option value="letter">Letters</option>
+							<option value="telegram">Telegrams</option>
+							<option value="order">Orders</option>
+							<option value="proclamation">Proclamations</option>
+							<option value="memo">Memos</option>
+							<option value="speech">Speeches</option>
+						</select>
+						<select id="DocumentSortOrder">
+							<option value="date-asc">Date (oldest first)</option>
+							<option value="date-desc">Date (newest first)</option>
+							<option value="title-asc">Title (A-Z)</option>
+						</select>
+					</div>
+					<div id="DocumentList"></div>
+					<div id="DocumentDetail">
+						<button id="DocDetailBackBtn">&larr; Back to list</button>
+						<h3 id="DocDetailTitle"></h3>
+						<div id="DocDetailMeta"></div>
+						<div id="DocDetailText"></div>
+						<div id="DocDetailSource"></div>
+						<span id="DocDetailTimelineLink">View on timeline</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="col-2" id="ControlSection">
+			<a href="TheStoryoftheWorld.html">
+				<div id="PageBackward"> < </div>
+			</a>
+			<a href="index.html">
+				<div id="PageForward">  >  </div>
+			</a>
+			<input type="checkbox" id ="demo">
+			<label for="demo" id="PageChapter">
+				<p> Explorer </p>
+					<ul id="ChapterHoverMenu">
+						<li> <a href="index.html"> Home </a> </li>
+						<li> <a href="About.html"> About </a> </li>
+						<li> <a href="Portfolio.html"> Portfolio </a> </li>
+						<li> <a href="WhatI'mReading.html"> What I'm Reading </a> </li>
+						<li> <a href="Library.html"> Library </a> </li>
+						<li> <a href="TheStoryoftheWorld.html"> The Story of the World </a> </li>
+						<li> <a href="LincolnDecisionExplorer.html"> Lincoln Explorer </a> </li>
+					</ul>
+			</label>
+			<a href="https://www.linkedin.com/in/christopheraaronsimpson"> <img id="LinkedInButton"
+			src="LinkedIn.jpg" alt="LinkedIn Link" />
+			</a>
+			<a href="https://twitter.com/QuiteRecondite"> <img id="TwitterButton" src="Twitter.png" alt="Twitter Link" />
+			</a>
+			<a href="mailto:chris.aaron.simpson@gmail.com"> <img id ="MailButton" src="Email.png" alt="Email Link" />
+			</a>
+		</div>
+
+		<script src="LincolnDecisionExplorerData.js"></script>
+		<script src="LincolnDecisionExplorer.js"></script>
+</BODY>
+</HTML>
